@@ -1,0 +1,32 @@
+/* ----- Laptop ----- */
+@media ( max-width: 1500px ) {
+    .main-menu ul {
+        padding-left: 0;
+    }
+}
+
+/* ----- Tablet ≥768px and ≤1023 ----- */
+@media ( min-width: 768px ) and ( max-width: 1023px ) {
+
+}
+
+/* ----- iPhone X landscape ≥375px and ≤812 ----- */
+@media ( min-width: 375px ) and ( max-width: 812px ) and ( orientation: landscape ) {
+
+}
+
+/* ----- Medium devices ≤767px ----- */
+@media ( max-width: 767px ) {
+	
+}
+
+/* ----- Small devices ≤640px ----- */
+@media ( max-width: 640px ) {
+
+}
+
+@media (max-height: 700px) {
+    .banner-slider .banner-slider-content {
+        padding: 40px 0 70px;
+    }    
+}
