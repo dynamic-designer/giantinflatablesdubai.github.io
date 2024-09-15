@@ -1,5 +1,8 @@
 /* ----- Laptop ----- */
-@media ( max-width: 1500px ) {
+@media ( max-width: 1550px ) {
+    .header-top-home img {
+        max-width: 22px;
+    }
     .main-menu ul {
         padding-left: 0;
     }
