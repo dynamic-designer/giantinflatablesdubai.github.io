@@ -6,17 +6,14 @@
     }
 }
 @media ( max-width: 1750px ){
-    .main-menu ul {
-        padding-left: 0;
-    }
     .header-search {
-        margin-right: 0;
+        margin-right: 30px;
     }
 }
 /* ----- Laptop ----- */
 @media ( max-width: 1550px ) {
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
     .h1, h1 {
         margin-bottom: 16px;
@@ -44,8 +41,15 @@
     p {
         margin-bottom: 15px;
     }
+    /* home */
+    .header-top-space {
+        padding-top: 260px;
+    }
     .header-top-home img {
         max-width: 22px;
+    }
+    .header-top {
+        padding: 5px 0;
     }
     .hamburger .wrap, .hamburger-line {
         font-size: 45px;
@@ -58,24 +62,32 @@
         margin-right: 20px;
     }
     .header-search {
-        max-width: 280px;
-        height: 36px;
+        max-width: 260px;
+        height: 32px;
+        border-radius: 4px;
     }
     .header-search input[type='search'] {
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .header-search-submit img {
+        max-width: 18px;
+    }
+    .main-menu ul li {
+        padding: 0 3px;
     }
     .main-menu ul li a {
+        border-radius: 4px;
         padding: 7px 10px;
-        min-width: 100px;
+        min-width: 90px;
     }
     .header-share-concept {
-        max-width: 260px;
+        max-width: 230px;
     }
     .header-lower-part .logo {
-        max-width: 300px;
+        max-width: 290px;
     }
     .header-lower-right strong {
-        font-size: 35px;
+        font-size: 30px;
     }
     .main-header.sticky { 
         padding-bottom: 15px;
@@ -84,7 +96,7 @@
         max-width: 135px;
     }
     .main-header.sticky .header-share-concept {
-        max-width: 220px;
+        max-width: 200px;
     }
     .main-header.sticky .header-lower-right strong {
         font-size: 20px;
@@ -103,7 +115,8 @@
         margin-bottom: 5px;
     }
     .btn {
-        font-size: 16px;
+        padding: 5px 18px;
+        border-radius: 5px;
     }
     .banner-down-btn img {
         max-width: 70px;
@@ -181,6 +194,30 @@
     .footer-top-col ul li {
         padding-bottom: 8px;
     }
+    /* about */
+    .breadcrumb .header-top-home img{
+        max-width: 17px;
+    }
+    .breadcrumb-left, .breadcrumb-back {
+        padding: 6px 20px;
+    }
+    .breadcrumb-back img {
+        max-width: 25px;
+    }
+    .about-banner-block {
+        padding: 30px 24px;
+    }
+    .about-banner-block h6, .about-banner-block .h6 {
+        font-size: 20px;
+    }
+    .about-block-icon {
+        max-width: 90px;
+        height: 77px;
+        margin-bottom: 19px;
+    }
+    .about-banner-desc p {
+        font-size: 19px;
+    }
 }
 
 /* ----- Tablet ≥768px and ≤1023 ----- */
@@ -207,4 +244,7 @@
     .banner-slider .banner-slider-content {
         padding: 40px 0 70px;
     }    
+    .banner-slider .owl-dots {
+        bottom: 25px;
+    }
 }

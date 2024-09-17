@@ -237,7 +237,6 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     display: inline-block;
     vertical-align: top;
     padding: 8px 22px;
-    font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
     text-align: center;
@@ -348,7 +347,8 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     border: none;
     border-radius: inherit;
     padding-right: 3.75rem;  
-    height: 100%;  
+    height: 100%;
+    text-overflow: ellipsis;
 }
 .header-search-submit {
     height: 100%;
@@ -379,9 +379,9 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .main-menu ul li a {
     display: block;
     background-color: #000000;
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
-    padding: 9px 18px;
+    padding: 10px 18px;
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
@@ -834,7 +834,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     bottom: 0;
 }
 .header-top-space {
-    padding-top: 261px;
+    padding-top: 350px;
     transition: 0.3s;
 }
 /*--------- home page ------------*/
@@ -1131,16 +1131,17 @@ a.updates-box:hover, a.updates-box:focus {
     background-color: #000000;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 8px;
-    padding: 6px 20px;
+    padding: 8px 25px;
 }
 .breadcrumb-left span, .breadcrumb-back {
     color: #d60309;
 }
 .breadcrumb .header-top-home img{
-    max-width: 17px;
+    max-width: 20px;
 }
 .breadcrumb .header-top-home {
     padding-right: 15px;
+    margin-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, 0.7);
 }
 .breadcrumb-back {
@@ -1152,8 +1153,8 @@ a.updates-box:hover, a.updates-box:focus {
     text-decoration: none;
 }
 .breadcrumb-back img {
+    max-width: 31px;
     margin-left: 10px;
-    max-width: 25px;
 }
 .about-banner-section {
     padding-bottom: 38px;
@@ -1165,7 +1166,7 @@ a.updates-box:hover, a.updates-box:focus {
     padding: 28px;
 }
 .about-banner-block {
-    padding: 30px 24px;
+    padding: 35px 28px;
     border: 1px solid #d60309;
     border-radius: 5px;
     background-color: #000000;
@@ -1174,12 +1175,15 @@ a.updates-box:hover, a.updates-box:focus {
 .about-block-icon {
     display: flex;
     align-items: center;
-    max-width: 90px;
-    height: 77px;
-    margin-bottom: 19px;
+    max-width: 120px;
+    height: 90px;
+    margin-bottom: 32px;
 }
 .about-block-icon img {
     max-height: 100%;
+}
+.about-banner-block h6, .about-banner-block .h6 {
+    font-size: 25px;
 }
 .about-banner-block p {
     color: #888888;
@@ -1190,20 +1194,23 @@ a.updates-box:hover, a.updates-box:focus {
     border-radius: 8px;
     padding: 30px;
     margin: 22px auto;
-    max-width: 1050px;
+    /* max-width: 1050px; */
 }
 .about-banner-desc p {
-    font-size: 19px;
+    font-size: 22px;
     line-height: 1.5;
 }
 .products-slider-section {
     padding: 25px 0;
 }
 .products-slider-section .updates-slider {
+    margin-left: -20px;
+    margin-right: -20px;
     padding-top: 40px;
 }
 .products-slider-section .owl-item {
-    padding: 0 18px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .dropdown {
     max-width: 220px;
