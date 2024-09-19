@@ -237,6 +237,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     display: inline-block;
     vertical-align: top;
     padding: 8px 22px;
+    font-size: inherit;
     font-weight: 700;
     line-height: 1.5;
     text-align: center;
@@ -617,6 +618,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .footer-top-col {
     position: relative;
     flex: auto;
+    max-width: 25%;
     padding-left: 4%;
     padding-right: 4%;
     margin-bottom: 20px;
@@ -640,6 +642,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     border-radius: 6px;
 }
 .footer-top-heading h6, .footer-top-heading .h6{
+    font-size: 16px;
     margin-bottom: 0;
 }
 .footer-top-col ul {
@@ -1194,7 +1197,11 @@ a.updates-box:hover, a.updates-box:focus {
     border-radius: 8px;
     padding: 30px;
     margin: 22px auto;
-    /* max-width: 1050px; */
+}
+.about-banner-desc.-sub-cat{
+    max-width: 80%;
+    width: 100%;
+    margin-top: 75px;
 }
 .about-banner-desc p {
     font-size: 22px;
@@ -1203,7 +1210,7 @@ a.updates-box:hover, a.updates-box:focus {
 .products-slider-section {
     padding: 25px 0;
 }
-.products-slider-section .updates-slider {
+.products-slider-section .updates-slider, .products-slider-section .products-slider {
     margin-left: -20px;
     margin-right: -20px;
     padding-top: 40px;
@@ -1213,8 +1220,7 @@ a.updates-box:hover, a.updates-box:focus {
     padding-right: 20px;
 }
 .dropdown {
-    max-width: 220px;
-    width: 100%;
+    display: inline-block;
     margin-left: 90px;
 }
 .dropdown .hamburger-lines {
@@ -1248,7 +1254,7 @@ a.updates-box:hover, a.updates-box:focus {
 .dropdown-toggle img{
     max-width: 22px;
     transform: rotate(90deg);
-    margin-left: auto;
+    margin-left: 10px;
     display: inline-block;
 }
 .dropdown-toggle:hover, .dropdown-toggle.show {
@@ -1310,7 +1316,20 @@ a.updates-box:hover, a.updates-box:focus {
     flex-wrap: wrap;
 }
 .updates-blocks-list .updates-slider-item {
-    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+.updates-blocks-list .updates-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;   
+}
+.updates-blocks-list .updates-blocks-col {
+    margin-bottom: 42px;
+}
+.updates-blocks-list .updates-box-img {
+    height: auto;
 }
 .pagination {
     text-transform: uppercase;

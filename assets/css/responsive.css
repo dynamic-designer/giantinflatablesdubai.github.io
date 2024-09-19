@@ -10,6 +10,14 @@
         margin-right: 30px;
     }
 }
+@media (max-height: 700px) {
+    .banner-slider .banner-slider-content {
+        padding: 40px 0 70px;
+    }    
+    .banner-slider .owl-dots {
+        bottom: 25px;
+    }
+}
 /* ----- Laptop ----- */
 @media ( max-width: 1550px ) {
     body {
@@ -23,7 +31,7 @@
         margin-bottom: 16px;
     }
     .h3, h3 {
-        font-size: 62px;
+        font-size: 52px;
         margin-bottom: 14px;
     }
     .h4, h4 {
@@ -35,7 +43,7 @@
         margin-bottom: 12px;
     }
     .h6, h6 {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 12px;
     }
     p {
@@ -115,7 +123,7 @@
         margin-bottom: 5px;
     }
     .btn {
-        padding: 5px 18px;
+        padding: 5px 16px;
         border-radius: 5px;
     }
     .banner-down-btn img {
@@ -130,7 +138,7 @@
         font-size: 104px;
     }
     .theme-stroke-heading {
-        padding-top: 32px;
+        padding-top: 40px;
     }
     .products-box {
         box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0.2);
@@ -145,11 +153,19 @@
         max-width: 280px;
     }
     .about-middle-contect p {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 18px;
     }
-    .share-concept-form-box {
-        max-width: 350px;
+    .share-concept-form-box, .contact-links-box {
+        max-width: 300px;
+    }
+    .products-slider-section .updates-slider, .products-slider-section .products-slider {
+        margin-left: -13px;
+        margin-right: -13px;
+    }
+    .products-slider-section .owl-item {
+        padding-left: 13px;
+        padding-right: 13px;
     }
     .updates-slider-item {
         max-width: 450px;
@@ -163,17 +179,30 @@
         padding: 18px 8px 0;
     }
     .owl-nav button, .owl-next, .owl-prev {
-        height: 42px;
-        width: 42px;
+        height: 33px;
+        width: 33px;
     }
-    .contact-links-box {
-        max-width: 320px;
+    .owl-nav button span, .owl-next span, .owl-prev span {
+        font-size: 23px;
+        top: -2px;
+    }
+    .updates-custom-nav, .products-custom-nav {
+        column-gap: 10px;
     }
     .footer-top-col {
+        padding-left: 3%;
+        padding-right: 3%;
         margin-bottom: 15px;
     }
+    .footer-top-heading h6, .footer-top-heading .h6{
+        font-size: 14px;
+    }
+    .footer-top-heading {
+        min-width: 120px;
+        max-width: 120px;
+    }
     .footer-bottom-col.-middle h6, .footer-bottom-col.-middle .h6 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .footer-bottom-row {
         margin: 0 -3%;
@@ -182,27 +211,27 @@
         margin-bottom: 30px;
     }
     .footer-bottom-img {
-        height: 150px;
-        max-width: 320px;
+        height: 140px;
+        max-width: 300px;
     }
     .footer-web-url a {
-        font-size: 21px;
+        font-size: 18px;
     }
     .footer-web-url + strong {
-        font-size: 18px;
+        font-size: 16px;
     }
     .footer-top-col ul li {
         padding-bottom: 8px;
     }
     /* about */
     .breadcrumb .header-top-home img{
-        max-width: 17px;
+        max-width: 15px;
     }
     .breadcrumb-left, .breadcrumb-back {
-        padding: 6px 20px;
+        padding: 6px 15px;
     }
     .breadcrumb-back img {
-        max-width: 25px;
+        max-width: 22px;
     }
     .about-banner-block {
         padding: 30px 24px;
@@ -216,35 +245,69 @@
         margin-bottom: 19px;
     }
     .about-banner-desc p {
-        font-size: 19px;
+        font-size: 18px;
+    }
+    .about-banner-desc.-sub-cat{
+        margin-top: 50px;
+    }
+    .pagination a, .pagination .active span {
+        padding: 5px 13px;
+        border-radius: 5px;
+    }
+    .pagination .prev a, .pagination .next a {
+        font-size: 23px;
+        padding-top: 6px;
+        padding-bottom: 10px;
+    }
+    .updates-blocks-list .updates-slider-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .updates-blocks-list .updates-blocks-col {
+        margin-bottom: 24px;
     }
 }
-
-/* ----- Tablet ≥768px and ≤1023 ----- */
-@media ( min-width: 768px ) and ( max-width: 1023px ) {
-
+/* ----- Tablet  ----- */
+@media ( max-width: 1199px ){
+    .container, .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header-search {
+        margin-right: 0;
+    }
 }
-
-/* ----- iPhone X landscape ≥375px and ≤812 ----- */
-@media ( min-width: 375px ) and ( max-width: 812px ) and ( orientation: landscape ) {
-
+@media ( max-width: 991px ) {
+    .header-upper-part {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #000000;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .header-top, .header-bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header-lower-part .logo {
+        margin-top: 0;
+    }
+    .main-header.sticky {
+        padding-bottom: 0;
+    }
+    .main-header .logo {
+        max-width: 170px;
+    }
+    .main-header.sticky .logo {
+        max-width: 0;
+        margin-top: 0;
+        height: 0;
+    }
 }
-
-/* ----- Medium devices ≤767px ----- */
+/* ----- Mobile ----- */
 @media ( max-width: 767px ) {
 	
 }
+@media ( max-width: 575px ) {
 
-/* ----- Small devices ≤640px ----- */
-@media ( max-width: 640px ) {
-
-}
-
-@media (max-height: 700px) {
-    .banner-slider .banner-slider-content {
-        padding: 40px 0 70px;
-    }    
-    .banner-slider .owl-dots {
-        bottom: 25px;
-    }
 }
