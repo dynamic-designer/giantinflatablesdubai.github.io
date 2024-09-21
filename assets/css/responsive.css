@@ -70,7 +70,7 @@
         margin-right: 20px;
     }
     .header-search {
-        max-width: 260px;
+        max-width: 280px;
         height: 32px;
         border-radius: 4px;
     }
@@ -92,7 +92,7 @@
         max-width: 230px;
     }
     .header-lower-part .logo {
-        max-width: 290px;
+        max-width: 280px;
     }
     .header-lower-right strong {
         font-size: 30px;
@@ -143,11 +143,14 @@
     .products-box {
         box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0.2);
     }
+    .product-all-btn {
+        margin-top: 30px;
+    }
     .g-5, .gy-5 {
-        --bs-gutter-y: 3rem;
+        --bs-gutter-y: 3.5rem;
     }
     .g-5, .gx-5 {
-        --bs-gutter-x: 3rem;
+        --bs-gutter-x: 3.4rem;
     }
     .about-left-logo img {
         max-width: 280px;
@@ -188,6 +191,23 @@
     }
     .updates-custom-nav, .products-custom-nav {
         column-gap: 10px;
+    }
+    .share-concept-form-input {
+        font-size: 12px !important;
+        height: 26px !important;
+    }
+    .share-concept-icon {
+        min-width: 18px;
+        max-width: 18px;
+        height: 26px;
+    }
+    .share-concept-info strong {
+        display: block;
+        font-size: 13px;
+        margin-top: 3px;
+    }
+    .contact-links-box p {
+        font-size: 11px;
     }
     .footer-top-col {
         padding-left: 3%;
