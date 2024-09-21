@@ -221,6 +221,15 @@
         min-width: 120px;
         max-width: 120px;
     }
+    .footer-top-col ul li {
+        padding-bottom: 8px;
+    }
+    .footer-top-col ul li:before {
+        left: -19px;
+        top: 1px;
+        height: 14px;
+        width: 14px;
+    }
     .footer-bottom-col.-middle h6, .footer-bottom-col.-middle .h6 {
         font-size: 18px;
     }
@@ -239,9 +248,6 @@
     }
     .footer-web-url + strong {
         font-size: 16px;
-    }
-    .footer-top-col ul li {
-        padding-bottom: 8px;
     }
     /* about */
     .breadcrumb .header-top-home img{
@@ -308,6 +314,15 @@
     .header-top, .header-bottom {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .header-bottom {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-content: center !important;
+    }
+    .header-top {
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
     }
     .header-lower-part .logo {
         margin-top: 0;
