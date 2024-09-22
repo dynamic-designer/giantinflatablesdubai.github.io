@@ -23,7 +23,7 @@ $( document ).ready( function() {
 	/* banner top space */
 	$('.header-top-space').css('padding-top', $mainHeaderHeight);
 	if ($(window).width() < 991) {
-		$('.banner-slider-section').css('margin-top', $mobHeaderUpperHeight);
+		$('.banner-slider-section, .common-inner-banner').css('margin-top', $mobHeaderUpperHeight);
 	}
 	/* banner slider */
 	$('.banner-slider').owlCarousel({
@@ -92,7 +92,7 @@ $( document ).ready( function() {
 			dots: false,
 			items: 1,
 			navContainer: '.product-detail-custom-nav',
-			autoplay: true,
+			// autoplay: true,
 			loop: true,
 			onInitialized: counter,
 			onTranslated: counter
@@ -166,9 +166,9 @@ $( window ).on( 'scroll',function() {
 ------------------------------------------------------------------------------*/
 $( window ).on( 'resize',function() {
 	if ($(window).width() < 991) {
-		$('.banner-slider-section').css('margin-top', $mobHeaderUpperHeight);
+		$('.banner-slider-section, .common-inner-banner').css('margin-top', $mobHeaderUpperHeight);
 	} else {
-		$('.banner-slider-section').css('margin-top', 0);
+		$('.banner-slider-section, .common-inner-banner').css('margin-top', 0);
 	}
 } );
 

@@ -24,7 +24,10 @@
             <div class="header-upper-part">
               <div class="header-top d-flex justify-content-between">
                 <div class="header-top-left d-flex align-items-center">
-                  <a href="index.html" class="header-top-home d-flex align-items-center text-uppercase">
+                  <a href="index.html" class="header-mobile-logo">
+                    <img src="assets/images/mobile-logo.jpg" alt="small logo">
+                  </a>
+                  <a href="index.html" class="header-top-home d-lg-flex d-none align-items-center text-uppercase">
                     <img class="me-2" src="assets/images/home-icon.png" alt="home-icon">Home
                   </a>
                   <div class="side-nav d-flex align-items-center">
@@ -67,7 +70,7 @@
                       <img src="assets/images/search-icon.svg" alt="search-icon">
                     </button>
                   </form>
-                  <div class="main-menu d-flex align-items-center mx-3">
+                  <div class="main-menu d-lg-flex d-none align-items-center mx-3">
                     <ul>
                       <li><a href="about.html">About</a></li>
                       <li class="active"><a href="products.html">Our Products</a></li>
@@ -97,14 +100,14 @@
               <a href="index.html" class="logo">
                 <img src="assets/images/logo.svg" alt="logo">
               </a>
-              <div class="header-lower-right theme-heading">
+              <div class="header-lower-right theme-heading d-lg-inline-block d-none">
                 <strong>Any <span>Size,</span> Any <span>Shape</span></strong>
               </div>
             </div>
           </div>
         </header>
         <!-- banner area part -->
-        <section class="products-banner-section header-top-space position-relative">
+        <section class="products-banner-section common-inner-banner header-top-space position-relative">
           <div class="bg-img-wrap">
             <img class="bg-img-top opacity-50" src="assets/images/about-banner.webp" alt="about-banner">
             <img class="bg-img-bottom" src="assets/images/red-effect-bottom.webp" alt="red-effect-bottom">
@@ -124,21 +127,23 @@
               <strong>Category Name</strong>
               <h3 class="h3">Category <span>Name</span></h3>
             </div>
-            <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="hamburger-lines">
-                  <span class="hamburger-line"></span>
-                  <span class="hamburger-line"></span>
-                  <span class="hamburger-line"></span>
-                </span>
-                Explore All
-                <img src="assets/images/right-arrow-circle.svg" alt="arrow-circle">
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <div class="text-lg-start text-center">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="hamburger-lines">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                  </span>
+                  Explore All
+                  <img src="assets/images/right-arrow-circle.svg" alt="arrow-circle">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
             </div>
             <div class="products-wrap position-relative">
               <div class="row g-5 px-4">
@@ -224,7 +229,7 @@
                 </div>
                 <div class="container pt-4">
                   <div class="position-relative">
-                    <div class="updates-slider px-3">
+                    <div class="updates-slider px-xl-5 px-3">
                       <div class="updates-slider-item">
                         <a href="#" class="updates-box">
                           <div class="updates-box-img">

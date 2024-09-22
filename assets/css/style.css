@@ -304,7 +304,6 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     background-image: linear-gradient(180deg, black, rgba(0,0,0,0));
     z-index: 9;
     transition: 0.3s;
-    /* display: none; */
 }
 .main-header.sticky {
     background-color: rgba(0,0,0,0.8); 
@@ -797,8 +796,9 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     color: #ffffff !important;
     font-size: 30px;
     line-height: 0.8;
+    transition: 0.3s;
 }
-.owl-nav.disabled {
+.owl-nav.disabled, .owl-dots.disabled {
     display: none;
 }
 .owl-nav button.disabled, .owl-next.disabled, .owl-prev.disabled {
@@ -1060,7 +1060,7 @@ a.products-box:hover, a.products-box:focus {
     margin-top: -22px;
     border: 1px solid #d60309;
     border-radius: 10px;
-    background-image: linear-gradient(115deg, #000000, #111111);
+    background-image: linear-gradient(150deg, #000000 50%, #222222);
 }
 .share-concept-field {
     margin-bottom: 10px;
@@ -1199,7 +1199,7 @@ a.updates-box:hover, a.updates-box:focus {
     margin-top: 10px;
     border: 1px solid #d60309;
     border-radius: 10px;
-    background-image: linear-gradient(115deg, #000000, #111111);
+    background-image: linear-gradient(150deg, #000000 50%, #222222);
 }
 .contact-links-box > img {
     margin-bottom: 8px;
@@ -1236,6 +1236,9 @@ a.updates-box:hover, a.updates-box:focus {
 }
 .breadcrumb-left, .breadcrumb-back {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    justify-content: center;
     align-items: center;
     background-color: #000000;
     border: 1px solid rgba(255, 255, 255, 0.7);
@@ -1272,11 +1275,12 @@ a.updates-box:hover, a.updates-box:focus {
     background-color: rgba(30, 30, 30, 0.8);
     border: 2px solid #333333;
     border-radius: 8px;
-    padding: 28px;
+    padding: 32px;
 }
 .about-banner-block {
     padding: 35px 28px;
     border: 1px solid #d60309;
+    box-shadow: 0 0 15px #d60309, 0 0 15px #d60309;
     border-radius: 5px;
     background-color: #000000;
     height: 100%;
@@ -1312,6 +1316,9 @@ a.updates-box:hover, a.updates-box:focus {
 .about-banner-desc p {
     font-size: 22px;
     line-height: 1.5;
+}
+.products-banner-section {
+    overflow: hidden;
 }
 .products-slider-section {
     padding: 25px 0;
@@ -1369,6 +1376,7 @@ a.updates-box:hover, a.updates-box:focus {
 /* product-detail page */
 .product-detail-title h5, .product-detail-title .h5 {
     font-size: 22px;
+    margin-bottom: 5px;
 }
 .product-detail-slider {
     border: 11px solid #8d8d8d;
@@ -1492,4 +1500,42 @@ a.updates-box:hover, a.updates-box:focus {
 .pagination .active a, .pagination .active span {
     pointer-events: none;
     background-color: transparent;
+}
+
+/* modal */
+.modal.fade .modal-dialog {
+    transform: none;
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+.modal-content {
+    transform: scale(0.7);
+    transition: 0.3s;
+}
+.modal.show .modal-content{
+    transform: scale(1);
+}
+.modal-dialog .btn-close {
+    font-size: 10px;
+    padding: 8px;
+    margin-right: -2px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    border-radius: 20px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+.modal-dialog .btn-close:hover {
+    opacity: 1;
+}
+.modal-dialog .modal-body {
+    padding: 0;
+    background-color: #ffffff;
+}
+.modal-dialog .modal-content {
+    background-color: transparent;
+    border: none;
 }

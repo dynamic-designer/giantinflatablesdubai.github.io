@@ -24,7 +24,10 @@
             <div class="header-upper-part">
               <div class="header-top d-flex justify-content-between">
                 <div class="header-top-left d-flex align-items-center">
-                  <a href="index.html" class="header-top-home d-flex align-items-center text-uppercase">
+                  <a href="index.html" class="header-mobile-logo">
+                    <img src="assets/images/mobile-logo.jpg" alt="small logo">
+                  </a>
+                  <a href="index.html" class="header-top-home d-lg-flex d-none align-items-center text-uppercase">
                     <img class="me-2" src="assets/images/home-icon.png" alt="home-icon">Home
                   </a>
                   <div class="side-nav d-flex align-items-center">
@@ -50,8 +53,8 @@
                         </div>
                         <div class="menu-outer">
                           <ul>
-                            <li class="active"><a href="about.html">About</a></li>
-                            <li><a href="products.html">Our Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="active"><a href="products.html">Our Products</a></li>
                             <li><a href="updates.html">Updates</a></li>
                             <li><a href="contact.html">Contact</a></li>
                           </ul>
@@ -67,10 +70,10 @@
                       <img src="assets/images/search-icon.svg" alt="search-icon">
                     </button>
                   </form>
-                  <div class="main-menu d-flex align-items-center mx-3">
+                  <div class="main-menu d-lg-flex d-none align-items-center mx-3">
                     <ul>
-                      <li class="active"><a href="about.html">About</a></li>
-                      <li><a href="products.html">Our Products</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li class="active"><a href="products.html">Our Products</a></li>
                       <li><a href="updates.html">Updates</a></li>
                       <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -97,14 +100,14 @@
               <a href="index.html" class="logo">
                 <img src="assets/images/logo.svg" alt="logo">
               </a>
-              <div class="header-lower-right theme-heading">
+              <div class="header-lower-right theme-heading d-lg-inline-block d-none">
                 <strong>Any <span>Size,</span> Any <span>Shape</span></strong>
               </div>
             </div>
           </div>
         </header>
         <!-- banner area part -->
-        <section class="product-detail-banner-section header-top-space position-relative">
+        <section class="product-detail-banner-section common-inner-banner header-top-space position-relative">
           <div class="bg-img-wrap">
             <img class="bg-img-top opacity-50" src="assets/images/about-banner.webp" alt="about-banner">
             <img class="bg-img-bottom" src="assets/images/red-effect-bottom.webp" alt="red-effect-bottom">
@@ -121,9 +124,9 @@
               <a href="#" class="breadcrumb-back text-uppercase">Back<img src="assets/images/right-arrow-circle.svg" alt="right-arrow-circle"></a>
             </div>
             <div class="row g-4 mt-4">
-              <div class="col-9">
+              <div class="col-xl-9 col-md-8">
                 <div class="product-detail-wrap">
-                  <div class="product-detail-title d-flex justify-content-between align-items-center">
+                  <div class="product-detail-title d-flex gap-1 flex-md-row flex-column justify-content-md-between justify-content-center align-items-center">
                     <h5 class="me-2 mt-1">NAME HERE SUB CATEGORY - 1</h5>
                     <div class="dropdown">
                       <button class="btn dropdown-toggle py-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -143,7 +146,7 @@
                         <div class="product-detail-slider-img">
                           <img src="assets/images/home-banner.webp" alt="product-banner">
                         </div>
-                        <button class="product-enlarge-btn theme-heading d-flex align-items-center gap-2">
+                        <button type="button" class="product-enlarge-btn theme-heading d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#productModal">
                           <img src="assets/images/search-icon.svg" alt="search-icon">
                           Click To Enlarge
                         </button>
@@ -152,7 +155,7 @@
                         <div class="product-detail-slider-img">
                           <img src="assets/images/desert.webp" alt="product-banner">
                         </div>
-                        <button class="product-enlarge-btn theme-heading d-flex align-items-center gap-2">
+                        <button type="button" class="product-enlarge-btn theme-heading d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#productModal1">
                           <img src="assets/images/search-icon.svg" alt="search-icon">
                           Click To Enlarge
                         </button>
@@ -161,7 +164,7 @@
                         <div class="product-detail-slider-img">
                           <img src="assets/images/home-banner.webp" alt="product-banner">
                         </div>
-                        <button class="product-enlarge-btn theme-heading d-flex align-items-center gap-2">
+                        <button type="button" class="product-enlarge-btn theme-heading d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#productModal2">
                           <img src="assets/images/search-icon.svg" alt="search-icon">
                           Click To Enlarge
                         </button>
@@ -170,12 +173,56 @@
                         <div class="product-detail-slider-img">
                           <img src="assets/images/desert.webp" alt="product-banner">
                         </div>
-                        <button class="product-enlarge-btn theme-heading d-flex align-items-center gap-2">
+                        <button type="button" class="product-enlarge-btn theme-heading d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#productModal3">
                           <img src="assets/images/search-icon.svg" alt="search-icon">
                           Click To Enlarge
                         </button>
                       </div>
                     </div>
+                    <!-- Modals start -->
+                    <div>
+                      <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                              <img src="assets/images/home-banner.webp" alt="product-banner">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                              <img src="assets/images/desert.webp" alt="product-banner">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                              <img src="assets/images/home-banner.webp" alt="product-banner">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                          <div class="modal-content">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-body">
+                              <img src="assets/images/desert.webp" alt="product-banner">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                     <!-- Modals end -->
                     <div class="product-detail-custom-nav d-flex justify-content-between mt-4 px-3">
                       <div class="text-uppercase my-auto">Products - <span class="product-slider-counter"></span></div> 
                     </div>
@@ -190,8 +237,8 @@
                   </p>
                 </div>
               </div>
-              <div class="col-3">
-                <div class="share-concept-form-box">
+              <div class="col-xl-3 col-md-4">
+                <div class="share-concept-form-box mx-auto">
                   <img class="w-full" src="assets/images/share-concept.png" alt="share-concept">
                   <form action="" class="share-concept-form ms-2">
                     <div class="share-concept-field d-flex align-items-start">
@@ -231,7 +278,7 @@
                 </div>
               </div>
             </div>
-            <div class="position-relative text-center mt-2 pb-4">
+            <div class="position-relative text-center mt-md-2 mt-4 pb-4">
               <a href="products.html" class="btn btn-back text-uppercase">
                 <img src="assets/images/right-arrow-circle.svg" alt="right-arrow-circle">
                 BACK PREVIOUS PAGE
@@ -256,7 +303,7 @@
                 <div class="bg-img-wrap">
                   <img class="bg-img-top" src="assets/images/red-effect-top.webp" alt="red-effect-top">
                 </div>
-                <div class="container position-relative pt-4">
+                <div class="container position-relative pt-md-4">
                   <div class="updates-slider">
                     <div class="updates-slider-item">
                       <a href="#" class="products-box text-center">
