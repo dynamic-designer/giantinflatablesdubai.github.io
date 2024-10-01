@@ -19,7 +19,7 @@
     }
 }
 /* ----- Laptop ----- */
-@media ( max-width: 1550px ) {
+@media ( max-width: 1650px ) {
     body {
         font-size: 14px;
     }
@@ -396,6 +396,9 @@
     .footer-top-row {
         padding-left: 42px;
         padding-right: 42px;
+    }
+    .footer-top-col::after {
+        right: 1px;
     }
     .owl-nav button {
         border-color: #d60309;
