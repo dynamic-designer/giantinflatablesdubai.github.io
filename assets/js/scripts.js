@@ -181,7 +181,6 @@ $( document ).ready( function() {
 			},
 		}
 	});
-
 	/* about-content-height */
 	shareAboutBox = $('.share-about-box').outerHeight();
 	shareAboutBtn = $('.share-about-btn').outerHeight();

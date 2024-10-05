@@ -1634,3 +1634,22 @@ a.updates-box:hover, a.updates-box:focus {
     background-color: transparent;
     border: none;
 }
+/* wow animation */
+.wow {
+    visibility: hidden;
+}
+.custom-fadedowm {
+    opacity: 0;
+}
+.banner-slider .owl-item.active .banner-slider-heading {
+    animation: fadeInDown 1s 0.5s forwards;
+}
+.banner-slider .owl-item.active .banner-slider-desc {
+    animation: fadeInDown 1s 1s forwards;
+}
+.banner-slider .owl-item.active .banner-slider-btn {
+    animation: fadeInUp 1s 1.5s forwards;
+}
+.banner-slider .owl-item.active .banner-down-btn {
+    animation: fadeInUp 1s 2s forwards;
+}

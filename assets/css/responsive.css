@@ -434,15 +434,11 @@
         padding-top: 6px;
         padding-bottom: 10px;
     }
-    .updates-blocks-list .updates-slider-item {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .updates-blocks-list .updates-blocks-col {
-        margin-bottom: 24px;
-    }
     .dropdown-item {
         font-size: 14px;
+    }
+    .updates-blocks-list .updates-blocks-col {
+        margin-bottom: 36px;
     }
 }
 /* ----- Tablet  ----- */
@@ -725,8 +721,8 @@
         max-width: 100%;
     }
     .updates-section.-update-page .container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 /* ----- Mobile ----- */
