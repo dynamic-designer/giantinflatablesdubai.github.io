@@ -37,7 +37,7 @@ $( document ).ready( function() {
 	/* jump to next section */
 	$( '.banner-down-btn' ).on( 'click', function(e) {
 		e.preventDefault();
-		$( 'html, body' ).animate({ scrollTop: $($( this ).attr( 'href' )).offset().top - $mainHeaderHeight + 45}, 500, 'linear' );
+		$( 'html, body' ).animate({ scrollTop: $($( this ).attr( 'href' )).offset().top - 80}, 500, 'linear' );
 	});
 	/* updates-slider */
 	var updatesSlider = $('.updates-slider');
