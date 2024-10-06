@@ -74,6 +74,7 @@ $( document ).ready( function() {
 	/* products-slider */
 	var productsSlider = $('.products-slider');
 	productsSlider.owlCarousel({
+		loop: true,
 		nav:true,
 		dots: false,
 		navContainer: '.products-custom-nav',
@@ -186,6 +187,12 @@ $( document ).ready( function() {
 	shareAboutBtn = $('.share-about-btn').outerHeight();
 	$('.about-middle-contect-inner').css('height', shareAboutBox-shareAboutBtn-33);
 	lineclamp();
+	/* button tag insert for animation */
+	setTimeout(function () {
+		$(".btn:not(.dropdown-toggle), .owl-prev, .owl-next, .breadcrumb-back, .pagination li a").addClass("btn-animation");
+		$(".btn-animation").prepend("<strong></strong><strong></strong><strong></strong><strong></strong>");
+		$(".owl-prev, .owl-next, .breadcrumb-back, .pagination li a").prepend("<strong></strong><strong></strong><strong></strong><strong></strong>");
+	}, 200);
 } );
 
 /* Script on load
