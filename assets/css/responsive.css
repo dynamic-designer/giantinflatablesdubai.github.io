@@ -133,7 +133,10 @@
     }
     .footer-bottom-img {
         height: 160px;
-        max-width: 350px;
+        max-width: 300px;
+    }
+    .footer-bottom-col.-middle .footer-bottom-img {
+        max-width: 390px;
     }
     .footer-web-url a {
         font-size: 20px;
@@ -380,6 +383,10 @@
         padding-top: 25px;
         padding-bottom: 55px;
     }
+    .footer-bottom-row .owl-item {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     .footer-bottom-col.-middle h6, .footer-bottom-col.-middle .h6 {
         font-size: 18px;
     }
@@ -388,7 +395,10 @@
     }
     .footer-bottom-img {
         height: 140px;
-        max-width: 300px;
+        max-width: 260px;
+    }
+    .footer-bottom-col.-middle .footer-bottom-img {
+        max-width: 350px;
     }
     .footer-web-url a {
         font-size: 16px;
@@ -540,7 +550,10 @@
     }
     .footer-bottom-img {
         height: 105px;
-        max-width: 250px;
+        max-width: 220px;
+    }
+    .footer-bottom-col.-middle .footer-bottom-img {
+        max-width: 300px;
     }
     .footer-top-row {
         padding-left: 42px;
