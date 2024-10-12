@@ -555,9 +555,6 @@
     /* .owl-nav button:hover span, .owl-nav button:focus span {
         color: #ffffff !important;
     } */
-    .owl-nav button span, .owl-nav button.disabled span {
-        color: #d60309 !important;
-    }
     .about-block-icon {
         max-width: 65px;
         height: 57px;

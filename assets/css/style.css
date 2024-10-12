@@ -260,7 +260,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .btn:hover, .btn:focus, .btn:focus-visible, .btn:active {
     color: #ffffff !important;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    background-color: #000000 !important;
+    background-color: #d60309 !important;
     text-decoration: none;
 }
 .btn-back {
@@ -472,9 +472,6 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     border-left: 1px solid #d60309;
     padding: 5px 10px;
     transition: 0.3s;
-}
-.header-search-submit:hover, .header-search-submit:focus {
-    background-color: #000000;
 }
 .header-share-concept {
     max-width: 322px;
@@ -914,16 +911,16 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     border: 1px solid rgba(255, 255, 255, 0.5);
     transition: 0.3s;
 }
-/* .owl-nav button:hover, .owl-nav button:focus, .owl-next:hover, .owl-next:focus, .owl-prev:hover, .owl-prev:focus {
+.owl-nav button:hover, .owl-nav button:focus, .owl-next:hover, .owl-next:focus, .owl-prev:hover, .owl-prev:focus {
     background-color: #d60309;
-} */
+}
 .owl-nav button span, .owl-next span, .owl-prev span {
     position: relative;
     top: -3px;
     color: #ffffff !important;
     font-size: 30px;
     line-height: 0.8;
-    transition: 0.3s;
+    transition: 0.3s; 
 }
 .owl-nav.disabled, .owl-dots.disabled {
     display: none;
@@ -1544,7 +1541,8 @@ a.updates-box:hover, a.updates-box:focus {
     text-decoration: none;
 }
 .dropdown-toggle:after {
-    display: none;
+    border: none;
+    margin: 0;
 }
 .dropdown-toggle {
     width: 100%;
@@ -1562,9 +1560,9 @@ a.updates-box:hover, a.updates-box:focus {
     margin-left: 10px;
     display: inline-block;
 }
-.dropdown-toggle:hover, .dropdown-toggle.show {
+/* .dropdown-toggle:hover, .dropdown-toggle.show {
     box-shadow: 0 0 0px 3px rgba(255, 255, 255, 0.2);
-}
+} */
 .updates-contact-section .updates-wrap .bg-img-top {
     object-position: top;
 }
@@ -1690,8 +1688,7 @@ a.updates-box:hover, a.updates-box:focus {
     transition: 0.3s;
 }
 .pagination a:hover, .pagination a:focus {
-    /* color: #ffffff;
-    background-color: #d60309; */
+    background-color: #d60309;
     border: 1px solid rgba(255, 255, 255, 0.5);
     text-decoration: none;
 }
