@@ -1,6 +1,5 @@
 var $ = jQuery.noConflict();
 $mainHeaderHeight = $('.main-header').outerHeight();
-$mobHeaderUpperHeight = $('.header-upper-part').outerHeight();
 
 /* Script on ready
 ------------------------------------------------------------------------------*/
@@ -23,7 +22,7 @@ $( document ).ready( function() {
 	/* banner top space */
 	$('.header-top-space').css('padding-top', $mainHeaderHeight);
 	if ($(window).width() < 991) {
-		$('.banner-slider-section, .common-inner-banner').css('margin-top', $mobHeaderUpperHeight);
+		$('.banner-slider-section, .common-inner-banner').css('margin-top', $mainHeaderHeight);
 	}
 	/* banner slider */
 	$('.banner-slider').owlCarousel({
@@ -252,7 +251,7 @@ $( window ).on( 'scroll',function() {
 ------------------------------------------------------------------------------*/
 $( window ).on( 'resize',function() {
 	if ($(window).width() < 991) {
-		$('.banner-slider-section, .common-inner-banner').css('margin-top', $mobHeaderUpperHeight);
+		$('.banner-slider-section, .common-inner-banner').css('margin-top', $mainHeaderHeight);
 	} else {
 		$('.banner-slider-section, .common-inner-banner').css('margin-top', 0);
 	}
