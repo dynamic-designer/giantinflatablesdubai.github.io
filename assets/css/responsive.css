@@ -88,7 +88,7 @@
         height: 3px;
         margin: 5px auto;
     }
-    .header-share-concept {
+    .header-share-concept, .main-header.sticky .header-share-concept {
         max-width: 270px;
     }
     .main-menu ul li a {
@@ -252,7 +252,7 @@
         padding: 7px 10px;
         min-width: 90px;
     }
-    .header-share-concept {
+    .header-share-concept, .main-header.sticky .header-share-concept {
         max-width: 200px;
     }
     .header-main-logo {
@@ -260,6 +260,7 @@
     }
     .header-lower-right strong {
         font-size: 30px;
+        margin-bottom: 8%;
     }
     .banner-slider-item p {
         font-size: 28px;
@@ -520,6 +521,7 @@
     }
     .header-lower-right strong {
         font-size: 24px;
+        margin-bottom: 9%;
     }
     .header-top-space {
         padding-top: 136px;
@@ -707,7 +709,7 @@
         padding-left: 0;
         margin-left: 0;
     }
-    .header-top-right .header-share-concept {
+    .header-top-right .header-share-concept, .main-header.sticky .header-share-concept {
         position: fixed;
         bottom: 25px;
         right: 0;

@@ -103,9 +103,9 @@ $( document ).ready( function() {
 			onInitialized: counter,
 			onTranslated: counter,
 			loop: true,
-			autoplay: {
-				delay: 2000,
-			},
+			// autoplay: {
+			// 	delay: 2000,
+			// },
 		});
 		function counter(event) {
 			var items = event.item.count;
@@ -232,6 +232,13 @@ $( document ).ready( function() {
 		// Add hover event listeners using jQuery
 		$textWrapper.on('mouseenter', playAnimation);
 	});
+
+	/* fancybox */
+	if ($("[data-fancybox]").length > 0) {
+		Fancybox.bind("[data-fancybox]", {
+			// Your custom options
+		});
+	}
 	
 } );
 
