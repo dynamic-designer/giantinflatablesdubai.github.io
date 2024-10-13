@@ -193,6 +193,47 @@ $( document ).ready( function() {
 		$(".btn-animation").prepend("<strong></strong><strong></strong><strong></strong><strong></strong>");
 		$(".owl-prev, .owl-next, .breadcrumb-back, .pagination li a").prepend("<strong></strong><strong></strong><strong></strong><strong></strong>");
 	}, 200);
+
+	// Select all elements with the class 'theme-stroke-heading .letters'
+	$('.theme-stroke-heading .letters').each(function() {
+		var $textWrapper = $(this);
+
+		// Split each character into a span, adding an extra class if it's inside the <span>
+		$textWrapper.html($textWrapper.html().replace(/(<\/?span[^>]*>)|(\S)/g, function(match, p1, p2) {
+			if (p2) {
+				// Check if we are inside the <span> tag
+				var insideSpan = $textWrapper.find('span').length > 0 && $textWrapper.find('span').contents().filter(function() {
+					return this.nodeType === 3 && this.nodeValue === p2;
+				}).length > 0;
+				
+				return `<span class='letter'>${p2}</span>`;
+			}
+			// Keep the original <span> tags
+			return p1 || '';
+		}));
+
+		// Function to play the animation
+		function playAnimation() {
+			anime.timeline({ loop: false })
+			.add({
+				targets: $textWrapper.find('.letter').toArray(),
+				scale: [0, 1],
+				duration: 1500,
+				elasticity: 600,
+				delay: (el, i) => 45 * (i + 1)
+			}).add({
+				targets: $textWrapper.get(0),
+				opacity: 1,
+				duration: 1000,
+				easing: "easeOutExpo",
+				delay: 1000
+			});
+		}
+
+		// Add hover event listeners using jQuery
+		$textWrapper.on('mouseenter', playAnimation);
+	});
+	
 } );
 
 /* Script on load

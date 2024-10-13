@@ -950,6 +950,10 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     position: relative;
     padding-top: 58px;
 }
+.theme-stroke-heading .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+}
 .theme-stroke-heading strong {
     position: absolute;
     top: 0;
@@ -969,7 +973,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
     text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000, 1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
     margin-bottom: 0;
 }
-.theme-stroke-heading h3 span, .theme-stroke-heading .h3 span{
+.theme-stroke-heading h3 span > span, .theme-stroke-heading .h3 span > span{
     color: #d60309;
     text-shadow: 1px 0 #cccccc, -1px 0 #cccccc, 0 1px #cccccc, 0 -1px #cccccc, 1px 1px #cccccc, -1px -1px #cccccc, 1px -1px #cccccc, -1px 1px #cccccc;
 }
@@ -1151,10 +1155,10 @@ a.products-box:hover, a.products-box:focus {
     overflow: hidden;
 }
 .products-box-img img {
-    width: calc(100% - 22px);
-    height: calc(100% - 22px);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: all 0.3s;
 }
 a.products-box:hover .products-box-img img {
@@ -1167,7 +1171,7 @@ a.products-box:hover .products-box-img img {
     margin-bottom: 0;
 }
 .animated-border-box-glow .products-box-img img {
-    margin: 11px;
+    margin: 5px;
 }
 .products-box::before {
     content: "";
