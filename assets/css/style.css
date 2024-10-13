@@ -1664,6 +1664,7 @@ a.updates-box:hover, a.updates-box:focus {
 }
 .product-detail-slider-item {
     position: relative;
+    display: block;
     border-radius: inherit;
     aspect-ratio: 2/1.2;
     height: 100%;
@@ -1793,44 +1794,6 @@ a.updates-box:hover, a.updates-box:focus {
 .error-content .h3 span {
     color: #ffffff;
 }
-
-/* modal */
-.modal.fade .modal-dialog {
-    transform: none;
-}
-.modal{
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: 0.3s;
-}
-.modal-content {
-    transform: scale(0.7);
-    transition: 0.3s;
-}
-.modal.show .modal-content{
-    transform: scale(1);
-}
-.modal-dialog .btn-close {
-    font-size: 10px;
-    padding: 8px;
-    margin-right: -2px;
-    margin-bottom: 6px;
-    margin-left: auto;
-    border-radius: 20px;
-    background-color: #ffffff;
-    opacity: 0.9;
-    transition: 0.3s;
-}
-.modal-dialog .btn-close:hover {
-    opacity: 1;
-}
-.modal-dialog .modal-body {
-    padding: 0;
-    background-color: #ffffff;
-}
-.modal-dialog .modal-content {
-    background-color: transparent;
-    border: none;
-}
 /* wow animation */
 .wow {
     visibility: hidden;
@@ -1849,4 +1812,8 @@ a.updates-box:hover, a.updates-box:focus {
 }
 .banner-slider .owl-item.active .banner-down-btn {
     animation: fadeInUp 1s 2s forwards;
+}
+/* fancybox */
+.fancybox-image {
+    max-width: 95%;
 }
