@@ -9,6 +9,13 @@
     .about-banner-blocks-wrap .g-xxl-5, .about-banner-blocks-wrap .gy-xxl-5 {
         --bs-gutter-x: 2.5rem;
     }
+    .footer-top-heading h6, .footer-top-heading .h6 {
+        font-size: 18px;
+        letter-spacing: 0.3px;
+    }
+    .footer-top-col ul li a {
+        font-size: 16px;
+    }
 }
 @media (max-height: 700px) {
     .banner-slider .banner-slider-content {
