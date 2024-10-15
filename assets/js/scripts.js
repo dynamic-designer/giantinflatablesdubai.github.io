@@ -5,11 +5,22 @@ $mainHeaderHeight = $('.main-header').outerHeight();
 ------------------------------------------------------------------------------*/
 $( document ).ready( function() {
 	/* Responsive Jquery Navigation */
-	$( '.hamburger' ).click(function() {
-		$( '.mobilenav' ).toggleClass( 'is-open' );
+	$('.main-dropdown-nav, .main-dropdown-nav ul li ul').slideUp();
+	$('.main-dropdown-nav-wrap .hamburger').click(function() {
+		$(this).toggleClass('is-open');
+		$('.main-dropdown-nav').slideToggle();
 	} );
-	$( '.mobilenav .nav-backdrop' ).click( function() {
-		$( '.mobilenav' ).removeClass( 'is-open' );
+	$(document).on("click", function (event) {
+		if ($(event.target).closest(".main-dropdown-nav-wrap").length === 0) {
+			$('.main-dropdown-nav-wrap .hamburger').removeClass('is-open');
+			$('.main-dropdown-nav').slideUp();
+		}
+	});
+	$('.main-dropdown-nav ul li ul').parent().addClass('has-child');
+	$('.main-dropdown-nav ul li.has-child').prepend('<button class="menu-open-button"><img src="/assets/images/double-line-down-angle.svg" alt="down-angle">menu-open-button</button>');
+	$('.menu-open-button').click( function() {
+		$(this).toggleClass('child-open');
+		$(this).parent().find('ul').slideToggle();
 	} );
 	/* header sticky */
 	$(window).scroll(function() {

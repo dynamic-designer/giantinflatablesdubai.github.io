@@ -262,6 +262,17 @@
         font-size: 30px;
         margin-bottom: 8%;
     }
+    .main-dropdown-nav {
+        top: calc(100% + 12px);
+    }
+    .main-dropdown-nav ul {
+        min-width: 230px;
+    }
+    .main-dropdown-nav li .menu-open-button {
+        padding: 8px;
+        height: 25px;
+        width: 35px;
+    }
     .banner-slider-item p {
         font-size: 28px;
         margin-bottom: 20px;
@@ -672,7 +683,7 @@
         padding-bottom: 10px;
         margin-bottom: 0;
     }
-    .main-header .header-top-left .side-nav {
+    .main-header .header-top-left .main-dropdown-nav-wrap {
         width: auto;
         height: auto;
         overflow: visible;
@@ -714,6 +725,9 @@
         bottom: 25px;
         right: 0;
         max-width: 170px !important;
+    }
+    .main-dropdown-nav {
+        top: calc(100% + 8px);
     }
     .header-top-space {
         padding-top: 85px !important;
