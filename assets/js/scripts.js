@@ -17,7 +17,7 @@ $( document ).ready( function() {
 		}
 	});
 	$('.main-dropdown-nav ul li ul').parent().addClass('has-child');
-	$('.main-dropdown-nav ul li.has-child').prepend('<button class="menu-open-button"><img src="/assets/images/double-line-down-angle.svg" alt="down-angle">menu-open-button</button>');
+	$('.main-dropdown-nav ul li.has-child').prepend('<button class="menu-open-button"><img src="assets/images/double-line-down-angle.svg" alt="down-angle">menu-open-button</button>');
 	$('.menu-open-button').click( function() {
 		$(this).toggleClass('child-open');
 		$(this).parent().find('ul').slideToggle();
