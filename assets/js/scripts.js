@@ -9,7 +9,15 @@ $( document ).ready( function() {
 	$('.main-dropdown-nav-wrap .hamburger').click(function() {
 		$(this).toggleClass('is-open');
 		$('.main-dropdown-nav').slideToggle();
-	} );
+	});
+	$('.main-dropdown-nav-wrap').mouseenter(function() {
+		$(this).children(".hamburger").addClass('is-open');
+		$('.main-dropdown-nav').slideDown();
+	});
+	$('.main-dropdown-nav').mouseleave(function() {
+		$(this).siblings(".hamburger").removeClass('is-open');
+		$('.main-dropdown-nav').slideUp();
+	});
 	$(document).on("click", function (event) {
 		if ($(event.target).closest(".main-dropdown-nav-wrap").length === 0) {
 			$('.main-dropdown-nav-wrap .hamburger').removeClass('is-open');
