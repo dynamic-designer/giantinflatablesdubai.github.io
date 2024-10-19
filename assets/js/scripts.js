@@ -43,7 +43,20 @@ $( document ).ready( function() {
 	if ($(window).width() < 991) {
 		$('.banner-slider-section, .common-inner-banner').css('margin-top', $mainHeaderHeight);
 	}
+	
+
 	/* banner slider */
+
+	// $('.banner-slider').revolution({
+	// 	delay:9000,
+	// 	startwidth:1170,
+	// 	startheight:400,
+	// 	hideThumbs:10,
+	// 	lazyLoad:"on",
+	// 	forceFullWidth:"on",
+	// 	fullWidth:"on"
+	// });
+
 	$('.banner-slider').owlCarousel({
 		loop: true,
 		nav:false,
@@ -52,6 +65,8 @@ $( document ).ready( function() {
 			delay: 2000,
 		},
 	})
+
+
 	/* jump to next section */
 	$( '.banner-down-btn' ).on( 'click', function(e) {
 		e.preventDefault();
