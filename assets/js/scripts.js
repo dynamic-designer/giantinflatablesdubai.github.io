@@ -63,9 +63,8 @@ $( document ).ready( function() {
 		loop: true,
 		nav:false,
 		items:1,
-		autoplay: {
-			delay: 2000,
-		},
+		animateIn: 'fadeIn', // add this
+  		animateOut: 'fadeOut', // and this
 	})
 
 
