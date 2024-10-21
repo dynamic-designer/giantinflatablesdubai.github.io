@@ -714,7 +714,7 @@
         margin-right: 10px !important;
     }
     .main-header.sticky .hamburger > span.text-uppercase {
-        font-size: 0;
+        /* font-size: 0; */
     }
     .hamburger > span.text-uppercase {
         text-transform: capitalize !important;
