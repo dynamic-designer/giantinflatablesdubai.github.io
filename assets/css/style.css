@@ -1388,6 +1388,25 @@ a.products-box:hover .products-box-img img {
 .share-concept-form-input:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
 }
+.shareconceptModal {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1 !important;
+}
+.shareconceptModal .modal-dialog {
+    max-width: 400px;
+}
+.shareconceptModal .modal-dialog .modal-content {
+    background-color: transparent;
+    border: 0 none;
+}
+.shareconceptModal .modal-dialog .modal-content .btn-close {
+    position: absolute;
+    background-color: red;
+    opacity: 1;
+    top: 25px;
+    right: -50px;
+}
 textarea.share-concept-form-input {
     height: 55px !important;
     padding-top: 5px;
