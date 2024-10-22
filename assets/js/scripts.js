@@ -266,6 +266,23 @@ $( document ).ready( function() {
 			// Your custom options
 		});
 	}
+
+	setInterval(function () {
+		$(".boxnav__item--next").click();
+	}, 5000);
+
+	$(".products-box-img").owlCarousel({
+		nav:false,
+		dots: false,
+		mouseDrag: false,
+		items:1,
+		loop:true,
+		animateOut: 'rotateOut',
+		animateIn: 'rotateIn',
+		autoplay: {
+			delay: 2000,
+		}
+	});
 	
 } );
 
