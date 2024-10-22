@@ -15,6 +15,14 @@ $( document ).ready( function() {
 			$(this).children(".hamburger").addClass('is-open');
 			$('.main-dropdown-nav').slideDown();
 		});
+		$('.hamburger').mouseenter(function() {
+			$(this).addClass('is-open');
+			$('.main-dropdown-nav').slideDown();
+		});
+		$('.main-dropdown-nav-wrap').mouseleave(function() {
+			$(this).children(".hamburger").removeClass('is-open');
+			$('.main-dropdown-nav').mouseleave();
+		});
 		$('.main-dropdown-nav').mouseleave(function() {
 			$(this).siblings(".hamburger").removeClass('is-open');
 			$('.main-dropdown-nav').slideUp();
