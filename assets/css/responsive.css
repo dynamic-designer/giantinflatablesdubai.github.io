@@ -201,6 +201,11 @@
     }
 }
 /* ----- Laptop ----- */
+@media ( min-width: 1500px ) and (max-width: 1600px) {
+    .footer-top-col ul li:before {
+        top: 1px;
+    }
+}
 @media ( max-width: 1500px ) {
     body {
         font-size: 14px;
@@ -433,7 +438,7 @@
     }
     .footer-top-col ul li:before {
         left: -19px;
-        top: 1px;
+        top: 2px;
         height: 14px;
         width: 14px;
     }
@@ -802,6 +807,9 @@
         margin: 0;
         padding-left: 42px;
         padding-right: 42px;
+    }
+    .footer-top-col ul li:before {
+        top: 1px;
     }
     .about-banner-section {
         padding-bottom: 18px;
