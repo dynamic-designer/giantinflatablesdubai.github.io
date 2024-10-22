@@ -292,7 +292,7 @@
         margin-bottom: 8%;
     }
     .main-dropdown-nav {
-        padding-top: 12px;
+        top: calc(100% + 5px);
     }
     .main-dropdown-nav ul {
         min-width: 230px;
@@ -753,7 +753,10 @@
         max-width: 170px !important;
     }
     .main-dropdown-nav {
-        padding-top: 8px;
+        top: calc(100% + 4px);
+    }
+    .hamburger-overlay {
+        height: calc(100% + 6px);
     }
     .header-top-space {
         padding-top: 85px !important;

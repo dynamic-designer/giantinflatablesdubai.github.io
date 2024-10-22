@@ -779,13 +779,23 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .hamburger > span.text-uppercase {
     transition: 0.3s;
 }
+.hamburger-overlay {
+    position: absolute;
+    height: calc(100% + 16px);
+    width: 100%;
+    cursor: pointer;
+}
+.hamburger:hover ~ .main-dropdown-nav,
+.hamburger-overlay:hover ~ .main-dropdown-nav,
+.main-dropdown-nav:hover {
+    display: block !important;
+}
 .main-dropdown-nav-wrap {
     position: relative;
 }
 .main-dropdown-nav {
     position: absolute;
-    top: 100%;
-    padding-top: 27px;
+    top: calc(100% + 8px);
     left: 0;
 }
 .main-dropdown-nav ul {
