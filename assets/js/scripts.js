@@ -271,14 +271,14 @@ $( document ).ready( function() {
 		$(".boxnav__item--next").click();
 	}, 5000);
 
-	$(".products-box-img").owlCarousel({
+	$(".products-box-img.has-slider").owlCarousel({
 		nav:false,
 		dots: false,
 		mouseDrag: false,
 		items:1,
 		loop:true,
-		animateOut: 'rotateOut',
-		animateIn: 'rotateIn',
+		animateOut: 'fadeOut',
+		animateIn: 'fadeIn',
 		autoplay: {
 			delay: 2000,
 		}
