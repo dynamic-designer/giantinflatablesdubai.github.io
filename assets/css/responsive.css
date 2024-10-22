@@ -755,6 +755,11 @@
     .main-dropdown-nav {
         top: calc(100% + 4px);
     }
+    .hamburger:hover ~ .main-dropdown-nav,
+    .hamburger-overlay:hover ~ .main-dropdown-nav,
+    .main-dropdown-nav:hover {
+        display: initial !important;
+    }
     .hamburger-overlay {
         height: calc(100% + 6px);
     }
