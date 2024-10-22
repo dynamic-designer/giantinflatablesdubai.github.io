@@ -5,13 +5,6 @@ $mainHeaderHeight = $('.main-header').outerHeight();
 ------------------------------------------------------------------------------*/
 $( document ).ready( function() {
 	/* Responsive Jquery Navigation */
-	$('.main-dropdown-nav, .main-dropdown-nav ul li ul').slideUp();
-	if (window.matchMedia('(max-width: 991px)').matches) {
-		$('.main-dropdown-nav-wrap .hamburger').click(function() {
-			$(this).toggleClass('is-open');
-			$('.main-dropdown-nav').slideToggle();
-		});
-	};
 	$(document).on("click", function (event) {
 		if ($(event.target).closest(".main-dropdown-nav-wrap").length === 0) {
 			$('.main-dropdown-nav-wrap .hamburger').removeClass('is-open');
